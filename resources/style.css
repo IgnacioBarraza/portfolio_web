@@ -11,29 +11,31 @@ body{
     background: linear-gradient(#D7DCDD, #D3F1F7);
 }
 
+a{
+    text-decoration: none;
+}
 /* Header */
 header{
     display: flex;
     justify-content: space-between;
-    min-height: 70px;
+    /* min-height: 70px; */
     background-color: #373636;
+    /* background: linear-gradient(117deg, #05696C, #05BABF); */
     align-items: center;
     padding: 5px;
-    position: fixed;
-    left: 0;
+    /* position: fixed; */
+    /* left: 0;
     top: 0;
-    right: 0;
-}
-
-a{
-    text-decoration: none;
-    color: #d4d2d5;
+    right: 0; */
+    /* background-image: url("./img/fondo1.jpg"); */
 }
 
 nav a{
     font-size: 20px;
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: #d4d2d5;
 }
 .logo{
     display: flex;
@@ -47,6 +49,7 @@ nav a{
     padding-left: 10px;
     letter-spacing: 1.6;
 }
+
 nav a:hover{
     color: #3498db;
 }
@@ -61,19 +64,16 @@ nav a:hover{
 }
 /* Main */
 main{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     min-height: 80px;
     align-items: center;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 3rem;
     height: auto;
 }
 
-
-.code-lng, .frameworks, .data-base{
-    text-align: center;
-}
 /* .container */
 .container{
     width: 100%;
@@ -109,7 +109,6 @@ main{
     height: 220px;
 }
 
-
 .container .card h4{
     font-weight: 600;
 }
@@ -131,6 +130,51 @@ main{
         flex-wrap: wrap;
     }
 }
+
+/* .skills */
+
+.card-code{
+    width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    /* position: static; */
+}
+
+.card-code .card{
+    width: 200px;
+    /* height: 180px; */
+    /* margin: 10px 20px 10px 20px; */
+}
+
+.card-code .card img{
+    width: 75px;
+    height: 75px;
+    /* border: 5px solid #3882F6; */
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+}
+
+.card-code .card #css{
+    width: 55px;
+    /* height: 75px;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    margin: 0 10px 0 10px; */
+}
+
+.card-code .card #react{
+    width: auto;
+    /* border-radius: 25px; */
+}
+
+.card-code .card h2{
+    font-size: 17px;
+}
 /* Footer */
 
 footer{
@@ -148,8 +192,8 @@ footer{
 }
 
 .contact-link img{
-    width: 120px;
-    height: 60px;
+    width: 90px;
+    height: 45px;
     background-color: #d4d2d5;
     border-radius: 10px;
 }
