@@ -125,6 +125,9 @@ main{
     color: #3498db;
 }
 
+.card a{
+    margin: 40px;
+}
 @media (max-width: 850px){
     .container{
         flex-wrap: wrap;
@@ -174,6 +177,7 @@ main{
 
 .card-code .card h2{
     font-size: 17px;
+    justify-content: center;
 }
 /* Footer */
 
